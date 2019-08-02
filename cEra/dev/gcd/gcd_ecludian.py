@@ -1,3 +1,9 @@
+#Ecludian Concept
+# If we substract a smaller number from the larger number GCD does not chage.
+# Similarly, the gcd of the largerst number and the reminder of two number does not change.
+# Let aR be the reminder when a is divided by b, then
+# gcd(a,b) == gcd(aR, b) == gcd(b, aR)
+
 def gcd(digit1, digit2):
     best = 0
     for i in range(2, digit1 + digit2):
