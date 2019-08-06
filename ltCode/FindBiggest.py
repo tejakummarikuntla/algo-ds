@@ -1,5 +1,9 @@
-
-
+def FindBiggestNumber(A, n):
+    high = A[0]
+    for digit in A:
+        if digit > high:
+            high = digit
+    print("Highest Number:", high)
 
 
 if __name__ == '__main__':
@@ -7,4 +11,4 @@ if __name__ == '__main__':
     print("Enter the array elements:")
     input_lst = [int(x) for x in input().split()]
     assert len(input_lst) == input_size, "Input Size is not equal to array size"
-    print(input_size, input_lst)
+    FindBiggestNumber(input_lst, input_size)
