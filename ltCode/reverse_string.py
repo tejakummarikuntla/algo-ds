@@ -1,3 +1,8 @@
+def reverse(st):
+    rev = ""
+    for i in st:
+        rev = i + rev
+    return rev
 
 def reverse_string(st):
 #    return st[::-1]
@@ -11,5 +16,8 @@ def reverse_string(st):
 
 if __name__ == "__main__":
     in_str = str(input())
-    rev = reverse_string(in_str)
-    print(rev)
+    rev_with_lst = reverse_string(in_str)
+    print("With List conversion ", rev_with_lst)
+    rev_with_rev_add = reverse(in_str)
+    print("With Stack rev", rev_with_rev_add)
+
