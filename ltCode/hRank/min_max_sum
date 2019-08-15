@@ -1,0 +1,10 @@
+
+def min_max(arr):
+    sum_arr = 0
+    for i in range(len(arr)):
+        sum_arr += arr[i]
+    print(sum_arr - max(arr), sum_arr - min(arr))   
+    
+if __name__ == '__main__':
+    input_arr = [int(x) for x in input().split()]
+    min_max(input_arr)
