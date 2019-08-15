@@ -1,0 +1,25 @@
+import copy
+
+def min_max(arr):
+    max_val = max(arr)
+    min_val = min(arr)
+    
+    max_arr = copy.copy(arr)
+    min_arr = copy.copy(arr)
+
+    max_arr.remove(max_val)
+    min_arr.remove(min_val)
+    
+    MIN = 0
+    MAX = 0
+    
+    for i in min_arr:
+        MIN = MIN + i
+        
+    for i in max_arr:
+        MAX = MAX + i
+
+    print(MAX, MIN)
+if __name__ == '__main__':
+    input_arr = [int(x) for x in input().split()]
+    min_max(input_arr)
