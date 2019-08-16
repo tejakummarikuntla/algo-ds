@@ -1,0 +1,13 @@
+def birthday_cake_candles(arr):
+    max_val = max(arr)
+    count = 0
+    for el in arr:
+        if el == max_val:
+            count = count + 1
+    print(count)
+
+if __name__ == '__main__':
+    input_n = int(input())
+    input_arr = list(map(int, input().rstrip().split()))
+    
+    birthday_cake_candles(input_arr)
