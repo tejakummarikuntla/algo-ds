@@ -5,7 +5,7 @@ def motu_patlu(arr):
 
         mt_sum = 0
         pt_sum = 0
-        mt_lst = arr[0:mid_val+1]
+        mt_lst = arr[0:mid_val]
         pt_lst = arr[mid_val:]
         for dig in mt_lst:
             mt_lst = mt_lst + dig
