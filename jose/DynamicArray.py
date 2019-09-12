@@ -21,6 +21,7 @@ class DynamicArray(object):
         if self.n == self.capacity:
             self._resize(2*self.capacity) # 2x if capacity is not enough
 
+        print("self.n: ",self.n, "self.capacity", self.capacity)
         self.A[self.n] = ele
         self.n += 1
 
