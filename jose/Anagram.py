@@ -4,6 +4,12 @@ def Anagram(str1, str2):
 
     return sorted(str1) == sorted(str2)
 
+def Anagram(str1, str2):
+    str1 = str1.remove(' ', '').lower()
+    str2 = str2.remove(' ', '').lower()
+
+    return sorted(str1) == sorted(str2)
+
 
 #########################################3
 def AnagramCheck(str1, str2):
