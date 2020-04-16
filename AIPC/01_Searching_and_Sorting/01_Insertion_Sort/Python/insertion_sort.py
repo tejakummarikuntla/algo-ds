@@ -1,15 +1,14 @@
-# input_txt = [int(x) for x in input().split()]
-input_txt = [2, 6, 8, 1, 4]
-def inesertion_sort(arr):
-    for j in range(1, len(arr)):
-        key = arr[j]
-        i = j-1
-
-        while(i>0 and arr[i] > key):
-            arr[i+1] = arr[i]
-            i = i-1
-
-        arr[i+1] = key
-    print(arr)
-
-inesertion_sort(input_txt)
+def insertionSort(arr): 
+      for i in range(1, len(arr)): 
+        key = arr[i] 
+        j = i-1
+        while j >=0 and key < arr[j] : 
+                arr[j+1] = arr[j] 
+                j -= 1
+        arr[j+1] = key 
+  
+arr = [12, 11, 13, 5, 6] 
+insertionSort(arr) 
+print ("Sorted array is:") 
+for i in range(len(arr)): 
+    print ("%d" %arr[i]) 
